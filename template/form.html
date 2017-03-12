@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>upload </title>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<link rel='stylesheet' href='stylesheets/style.css' /> 
+
+</head>
+
+
+<body>
+	<div>
+		<form action = 'uploads' method='POST'>
+		<h2> Uploading file </h2>
+		<input type = 'file' value = 'choose' name = 'file'>
+		<input type = 'submit' value = 'submit'>
+		</form>
+	</div>
+	
+	<div>
+		<form action='lists' method='POST' enctype='multipart/form-data'> 
+		<h2 id = 'message'>list </h2>
+		<input type='Submit'  value= 'Display List' >
+		</form>
+	</div>
+	
+	<div>
+		<form action='download' method='POST' enctype='multipart/form-data'> 
+		<h2 id = 'message'> Download </h2>
+		<input type='text' value=' select file to download' name='downloads' >
+		<input type='Submit'  value= 'Submit'>
+		</form>
+	</div>
+	
+	<div>
+		<form action='delete' method='POST' enctype='multipart/form-data'> 
+		<h2 id = 'message'> Delete </h2>
+		<input type='text' value=' select file to delete' name='deleteFile' >
+		<input type='Submit'  value= 'Submit'>
+		</form>
+	</div>
+
+</body>
+
+</html>
